@@ -1,0 +1,64 @@
+/* Page layout */
+.notfound-container {
+  height: 100vh;
+  background: linear-gradient(to bottom, #a8e6ff, #ffffff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Airplane animation */
+.airplane-wrapper {
+  position: absolute;
+  top: 20%;
+  animation: float 3s ease-in-out infinite;
+}
+
+.airplane {
+  font-size: 4rem;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Text */
+.nf-title {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #005c8f;
+  margin-bottom: 10px;
+}
+
+.nf-text {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Button */
+.nf-btn {
+  background: #0077b6;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.nf-btn:hover {
+  background: #0096c7;
+  transform: scale(1.05);
+}

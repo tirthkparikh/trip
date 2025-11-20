@@ -1,21 +1,21 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import FeaturedDestinations from './components/FeaturedDestinations';
-import Services from './components/Services';
-import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import './App.css';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import "./App.css";
+import Home from "./pages/Home";
+import NotFound from "./pages/Notfound";
+import { Route, Routes } from "react-router-dom";
+import BhurjKhalifa from "./pages/Destinations/BhurjKhalifa";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Hero />
-      <FeaturedDestinations />
-      <Services />
-      <Testimonials />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/bhurj-khalifa" element={<BhurjKhalifa />} />
+        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Footer />
     </div>
   );
