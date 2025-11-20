@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./App.css";
 import Home from "./pages/Home";
-import NotFound from "./pages/Notfound";
+import NotFound from "./pages/NotFound";
 import { Route, Routes } from "react-router-dom";
 import BhurjKhalifa from "./pages/Destinations/BhurjKhalifa";
 
